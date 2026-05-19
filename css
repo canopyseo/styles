@@ -1,0 +1,110 @@
+//---Canopy Styles v1 — Updated 5/19/26---//
+
+
+//---Table---//
+.sqs-block-markdown table{
+width:100%!important;
+border-collapse:collapse!important;
+margin:1.75em 0;
+font-size:0.95em;
+border:1px solid rgba(0,0,0,0.12)!important;}
+
+/*Header row tint*/
+.sqs-block-markdown thead{
+background:rgba(0,0,0,0.04)!important;}
+
+/*Cell padding + row dividers + faint column dividers*/
+.sqs-block-markdown th,
+.sqs-block-markdown td{
+padding:0.6em 0.85em!important;
+text-align:left;
+vertical-align:top;
+border-bottom:1px solid rgba(0,0,0,0.12)!important;
+border-right:1px solid rgba(0,0,0,0.08)!important;}
+
+/*Drop right border on rightmost cells*/
+.sqs-block-markdown th:last-child,
+.sqs-block-markdown td:last-child{
+border-right:0!important;}
+
+/*Bold header text*/
+.sqs-block-markdown th{
+font-weight:600!important;}
+
+/*Mobile: horizontal scroll instead of crushed columns*/
+@media screen and (max-width:640px){
+.sqs-block-markdown table{
+display:block;
+overflow-x:auto;
+-webkit-overflow-scrolling:touch;}}
+
+
+//---Code Block---//
+.sqs-block-code pre.source-code,
+.sqs-block-code pre{
+background:rgba(0,0,0,0.05)!important;
+border:1px solid rgba(0,0,0,0.12)!important;
+padding:1em 1.25em!important;
+border-radius:0px!important;
+overflow-x:auto;
+margin:1.5em 0;
+font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace!important;
+font-size:0.9em!important;
+line-height:1.6!important;
+-webkit-overflow-scrolling:touch;}
+
+/*Strip nested code styling*/
+.sqs-block-code pre.source-code code,
+.sqs-block-code pre code{
+background:transparent!important;
+padding:0!important;
+border-radius:0!important;
+font-family:inherit!important;
+font-size:inherit!important;
+display:block;}
+
+
+//---Inline Code---//
+/*Inline code (bold + italic)*/
+.blog-item-content-wrapper .sqs-block-html strong em,
+.blog-item-content .sqs-block-html strong em,
+.BlogItem-body .sqs-block-html strong em,
+.sqs-blog-item-content .sqs-block-html strong em{
+font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace!important;
+font-size:0.75rem!important;
+font-style:normal!important;
+font-weight:500!important;
+background:rgba(0,0,0,0.04)!important;
+border:1px solid rgba(0,0,0,0.12)!important;
+padding:0.3em 0.3em!important;
+border-radius:0px!important;
+word-break:break-word;}
+
+//---Blockquote---//
+.blog-item-content-wrapper .sqs-block-html blockquote,
+.blog-item-content .sqs-block-html blockquote,
+.BlogItem-body .sqs-block-html blockquote,
+.sqs-blog-item-content .sqs-block-html blockquote{
+margin:1.75em 0!important;
+padding:20px 30px!important;
+background-color:rgba(0,0,0,0.03);
+border-left:3px solid rgba(0,0,0,0.25)!important;
+font-size:1.0625em!important;
+font-weight:500!important;
+font-style:normal!important;
+color:inherit!important;}
+
+/*Blockquote inner paragraphs*/
+.blog-item-content-wrapper .sqs-block-html blockquote p,
+.blog-item-content .sqs-block-html blockquote p,
+.BlogItem-body .sqs-block-html blockquote p,
+.sqs-blog-item-content .sqs-block-html blockquote p{
+margin:0 0 0.5em 0!important;
+font-style:normal!important;}
+
+/*Trim margin on last blockquote paragraph*/
+.blog-item-content-wrapper .sqs-block-html blockquote p:last-child,
+.blog-item-content .sqs-block-html blockquote p:last-child,
+.BlogItem-body .sqs-block-html blockquote p:last-child,
+.sqs-blog-item-content .sqs-block-html blockquote p:last-child{
+margin-bottom:0!important;}
