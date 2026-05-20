@@ -1,7 +1,7 @@
-//---Canopy Styles v1 — Updated 5/19/26---//
+/*--- Canopy Styles v1 — Updated 5/20/26 ---*/
 
 
-//---Table---//
+/*--- Table ---*/
 .sqs-block-markdown table{
 width:100%!important;
 border-collapse:collapse!important;
@@ -39,7 +39,7 @@ overflow-x:auto;
 -webkit-overflow-scrolling:touch;}}
 
 
-//---Code Block---//
+/* ---Code Block--- */
 .sqs-block-code pre.source-code,
 .sqs-block-code pre{
 background:rgba(0,0,0,0.05)!important;
@@ -64,7 +64,7 @@ font-size:inherit!important;
 display:block;}
 
 
-//---Inline Code---//
+/* ---Inline Code--- */
 /*Inline code (bold + italic)*/
 .blog-item-content-wrapper .sqs-block-html strong em,
 .blog-item-content .sqs-block-html strong em,
@@ -80,7 +80,7 @@ padding:0.3em 0.3em!important;
 border-radius:0px!important;
 word-break:break-word;}
 
-//---Blockquote---//
+/* ---Blockquote--- */
 .blog-item-content-wrapper .sqs-block-html blockquote,
 .blog-item-content .sqs-block-html blockquote,
 .BlogItem-body .sqs-block-html blockquote,
