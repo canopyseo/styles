@@ -1,6 +1,5 @@
 /*--- Canopy Styles v1 — Updated 5/21/26 ---*/
 
-
 /*--- Table ---*/
 .sqs-block-markdown table{
 width:100%!important;
@@ -66,19 +65,19 @@ display:block;}
 
 /* ---Inline Code--- */
 /*Inline code (bold + italic)*/
-.blog-item-content-wrapper .sqs-block-html strong em,
-.blog-item-content .sqs-block-html strong em,
-.BlogItem-body .sqs-block-html strong em,
-.sqs-blog-item-content .sqs-block-html strong em{
+.blog-item-content-wrapper .sqs-block-html p:not(.sqsrte-small, .sqsrte-large, blockquote) strong em,
+.blog-item-content .sqs-block-html p:not(.sqsrte-small, .sqsrte-large) strong em,
+.BlogItem-body .sqs-block-html p:not(.sqsrte-small, .sqsrte-large) strong em,
+.sqs-blog-item-content .sqs-block-html p:not(.sqsrte-small, .sqsrte-large) strong em{
 font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace!important;
 font-size:0.75rem!important;
 font-style:normal!important;
 font-weight:500!important;
 background:rgba(0,0,0,0.04)!important;
 border:1px solid rgba(0,0,0,0.12)!important;
-padding:0.3em 0.3em!important;
+padding:0.4em!important;
 border-radius:0px!important;
-word-break:break-word;}
+word-break:break-word;} 
 
 /* ---Blockquote--- */
 .blog-item-content-wrapper .sqs-block-html blockquote,
@@ -110,9 +109,9 @@ font-style:normal!important;}
 margin-bottom:0!important;}
 
 /*Summary eyebrow*/
-.sqs-block-html p > strong:only-child > em:only-child{
+.sqs-block-html blockquote .sqsrte-small > strong:only-child > em:only-child{
 display:inline-block;
-margin-bottom:8px;
+line-height:100%!important;
 font-family:inherit!important;
 font-style:normal!important;
 font-weight:600!important;
