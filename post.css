@@ -1,4 +1,4 @@
-/*--- Canopy Styles v1 — Updated 5/20/26 ---*/
+/*--- Canopy Styles v1 — Updated 5/21/26 ---*/
 
 
 /*--- Table ---*/
@@ -108,3 +108,18 @@ font-style:normal!important;}
 .BlogItem-body .sqs-block-html blockquote p:last-child,
 .sqs-blog-item-content .sqs-block-html blockquote p:last-child{
 margin-bottom:0!important;}
+
+/*Summary eyebrow*/
+.sqs-block-html p > strong:only-child > em:only-child{
+display:inline-block;
+margin-bottom:8px;
+font-family:inherit!important;
+font-style:normal!important;
+font-weight:600!important;
+font-size:0.7rem!important;
+letter-spacing:0.08em;
+text-transform:uppercase;
+color:rgba(0,0,0,0.4)!important;
+background:none!important;
+border:none!important;
+padding:0!important;}
