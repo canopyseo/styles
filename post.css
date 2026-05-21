@@ -4,22 +4,23 @@
 .sqs-block-markdown table{
 width:100%!important;
 border-collapse:collapse!important;
-margin:1.75em 0;
-font-size:0.95em;
-border:1px solid rgba(0,0,0,0.12)!important;}
+margin:1em 0;
+border-radius:var(--c-radius-lg, 8px)!important;
+overflow:hidden!important;
+border:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;}
 
 /*Header row tint*/
 .sqs-block-markdown thead{
-background:rgba(0,0,0,0.04)!important;}
+background:var(--c-background, rgba(0,0,0,0.04))!important;}
 
 /*Cell padding + row dividers + faint column dividers*/
 .sqs-block-markdown th,
 .sqs-block-markdown td{
-padding:0.6em 0.85em!important;
+padding:0.7em 1em!important;
 text-align:left;
 vertical-align:top;
-border-bottom:1px solid rgba(0,0,0,0.12)!important;
-border-right:1px solid rgba(0,0,0,0.08)!important;}
+border-bottom:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;
+border-right:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;}
 
 /*Drop right border on rightmost cells*/
 .sqs-block-markdown th:last-child,
@@ -41,15 +42,14 @@ overflow-x:auto;
 /* ---Code Block--- */
 .sqs-block-code pre.source-code,
 .sqs-block-code pre{
-background:rgba(0,0,0,0.05)!important;
-border:1px solid rgba(0,0,0,0.12)!important;
+background:var(--c-background, rgba(0,0,0,0.04))!important;
+border-radius:var(--c-radius-lg, 8px)!important;
+overflow:hidden!important;
+border:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;
 padding:1em 1.25em!important;
-border-radius:0px!important;
 overflow-x:auto;
 margin:1.5em 0;
 font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace!important;
-font-size:0.9em!important;
-line-height:1.6!important;
 -webkit-overflow-scrolling:touch;}
 
 /*Strip nested code styling*/
@@ -73,10 +73,10 @@ font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Monaco,Consolas,"Liberat
 font-size:0.75rem!important;
 font-style:normal!important;
 font-weight:500!important;
-background:rgba(0,0,0,0.04)!important;
-border:1px solid rgba(0,0,0,0.12)!important;
+background:var(--c-background, rgba(0,0,0,0.04))!important;
+border:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;
 padding:0.4em!important;
-border-radius:0px!important;
+border-radius:var(--c-radius-sm, 4px)!important;
 word-break:break-word;} 
 
 /* ---Blockquote--- */
@@ -86,10 +86,10 @@ word-break:break-word;}
 .sqs-blog-item-content .sqs-block-html blockquote{
 margin:1.75em 0!important;
 padding:20px 30px!important;
-background-color:rgba(0,0,0,0.03);
-border-left:3px solid rgba(0,0,0,0.25)!important;
-font-size:1.0625em!important;
-font-weight:500!important;
+background-color:var(--c-background, rgba(0,0,0,0.04));
+border-radius:var(--c-radius-lg, 8px)!important;
+border:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;
+overflow:hidden!important;
 font-style:normal!important;
 color:inherit!important;}
 
@@ -98,7 +98,6 @@ color:inherit!important;}
 .blog-item-content .sqs-block-html blockquote p,
 .BlogItem-body .sqs-block-html blockquote p,
 .sqs-blog-item-content .sqs-block-html blockquote p{
-margin:0 0 0.5em 0!important;
 font-style:normal!important;}
 
 /*Trim margin on last blockquote paragraph*/
@@ -110,7 +109,7 @@ margin-bottom:0!important;}
 
 /*Summary eyebrow*/
 .sqs-block-html blockquote .sqsrte-small > strong:only-child > em:only-child{
-display:inline-block;
+display:block;
 line-height:100%!important;
 font-family:inherit!important;
 font-style:normal!important;
@@ -118,7 +117,8 @@ font-weight:600!important;
 font-size:0.7rem!important;
 letter-spacing:0.08em;
 text-transform:uppercase;
-color:rgba(0,0,0,0.4)!important;
+color:var(--c-eyebrow, rgba(0,0,0,0.4))!important;
+margin-top:0!important;
 background:none!important;
 border:none!important;
 padding:0!important;}
