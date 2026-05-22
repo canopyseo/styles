@@ -80,6 +80,27 @@ font-style:normal!important;
 font-weight:500!important;
 background:var(--c-background, rgba(0,0,0,0.04))!important;
 border:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;
+
+
+/* ---Blockquote--- */
+.blog-item-content-wrapper .sqs-block-html blockquote,
+.blog-item-content .sqs-block-html blockquote,
+.BlogItem-body .sqs-block-html blockquote,
+.sqs-blog-item-content .sqs-block-html blockquote{
+margin:1.75em 0;
+padding:20px 30px;
+background-color:var(--c-background, rgba(0,0,0,0.04));
+border-radius:var(--c-radius-lg, 8px);
+border:var(--c-border, 1px solid rgba(0,0,0,0.08));
+overflow:hidden!important;
+font-style:normal;}
+
+/*Blockquote inner paragraphs*/
+.blog-item-content-wrapper .sqs-block-html blockquote p,
+.blog-item-content .sqs-block-html blockquote p,
+.BlogItem-body .sqs-block-html blockquote p,
+.sqs-blog-item-content .sqs-block-html blockquote p{
+font-style:normal!important;}
 padding:0.4em!important;
 border-radius:var(--c-radius-sm, 4px)!important;
 word-break:break-word;} 
