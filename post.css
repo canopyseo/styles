@@ -79,7 +79,7 @@ font-size:0.75rem!important;
 font-style:normal!important;
 font-weight:500!important;
 background:var(--c-background, rgba(0,0,0,0.04))!important;
-border:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;
+border:var(--c-border, 1px solid rgba(0,0,0,0.08))!important;}
 
 
 /* ---Blockquote--- */
